@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-def weighted_average(lst):
-    if not lst:
+def weight_average(my_list=[]):
+    if not my_list:
         return 0
 
-    numerator = sum(x * w for x, w in lst)
-    denominator = sum(w for _, w in lst)
+    numerator = sum(x * w for x, w in my_list)
+    denominator = sum(w for _, w in my_list)
 
     return numerator / denominator
