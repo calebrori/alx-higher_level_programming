@@ -10,6 +10,3 @@ def raise_exception():
     try:
         # Raise a TypeError exception
         raise TypeError("This is a TypeError exception")
-    except TypeError as e:
-        # Log the error
-        print(f"Error: {e}")
