@@ -10,9 +10,8 @@ def raise_exception_msg(message=""):
     Raises:
     NameError: The exception raised with the custom message
     """
-    try:
-        # Raise the NameError with the custom message
-        raise NameError(message)
+    # Raise the NameError with the custom message
+    raise NameError(message)
     except NameError as e:
         # Log the error
         print(f"Error: {e}")
