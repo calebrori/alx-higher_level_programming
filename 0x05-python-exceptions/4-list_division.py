@@ -26,7 +26,8 @@ def list_division(my_list_1, my_list_2, list_length):
                 raise IndexError("Out of range")
 
             # Check if both elements are numbers
-            if not isinstance(my_list_1[i], (int, float)) or not isinstance(my_list_2[i], (int, float)):
+            if not isinstance(my_list_1[i], (int, float))
+            or not isinstance(my_list_2[i], (int, float)):
                 raise TypeError("Wrong type")
 
             # Check if the divisor is zero
