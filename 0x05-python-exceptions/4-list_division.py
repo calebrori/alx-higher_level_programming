@@ -2,57 +2,44 @@
 
 def list_division(my_list_1, my_list_2, list_length):
     """
-    This function divides element by element 2 lists.
+    Divides element by element 2 lists.
 
-    Parameters:
-    my_list_1 (list): The first list
-    my_list_2 (list): The second list
-    list_length (int): The length of the new list
+    Args:
+        my_list_1 (list): The first list to divide.
+        my_list_2 (list): The second list to divide.
+        list_length (int): The length of the resulting list.
 
     Returns:
-    list: A new list with element-wise division of the two input lists
+        list: A new list (length = list_length) with all divisions.
 
     Raises:
-    TypeError: If an element in either list is not an integer or float
-    ZeroDivisionError: If division by zero occurs
-    IndexError: If either list is too short
+        TypeError: If an element is not an integer or float.
+        ZeroDivisionError: If the denominator is zero.
+        IndexError: If my_list_1 or my_list_2 is too short.
+
+    Prints:
+        An error message if an error occurs.
 
     """
-    new_list = []
+    result = []
     for i in range(list_length):
         try:
-            # Check if both lists have elements at the current index
-            if i >= len(my_list_1) or i >= len(my_list_2):
-                raise IndexError("Out of range")
-
-            # Check if both elements are numbers
-            if not isinstance(my_list_1[i], (int, float))
-            or not isinstance(my_list_2[i], (int, float)):
-                raise TypeError("Wrong type")
-
-            # Check if the divisor is zero
-            if my_list_2[i] == 0:
-                raise ZeroDivisionError("Division by zero")
-
-            # Calculate and append the quotient
-            new_list.append(my_list_1[i] / my_list_2[i])
-        except IndexError as e:
-            # Log the error
-            print(f"Error: {e}")
-            print("Out of range")
-            new_list.append(0)
-        except TypeError as e:
-            # Log the error
-            print(f"Error: {e}")
-            print("Wrong type")
-            new_list.append(0)
-        except ZeroDivisionError as e:
-            # Log the error
-            print(f"Error: {e}")
-            print("Division by zero")
-            new_list.append(0)
+            a = my_list_1[i]
+            b = my_list_2[i]
+            if type(a) not in [int, float] or type(b) not in [int, float]:
+                raise TypeError("wrong type")
+            if b == 0:
+                raise ZeroDivisionError("division by 0")
+            result.append(a / b)
+        except IndexError:
+            print("out of range")
+            result.append(0)
+        except TypeError:
+            print("wrong type")
+            result.append(0)
+        except ZeroDivisionError:
+            print("division by 0")
+            result.append(0)
         finally:
-            # Continue to the next iteration
-            continue
-
-    return new_list
+            pass
+    return result
