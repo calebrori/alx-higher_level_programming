@@ -6,7 +6,7 @@ def safe_print_list_integers(my_list=[], x=0):
 
     Parameters:
     my_list (list): The list to be printed
-    
+
     Returns:
     The real number of integers printed
     """
