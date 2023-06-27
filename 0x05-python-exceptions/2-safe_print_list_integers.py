@@ -6,10 +6,9 @@ def safe_print_list_integers(my_list=[], x=0):
 
     Parameters:
     my_list (list): The list to be printed
-    x (int): The number of elements to access in my_list
-
+    
     Returns:
-    int: The real number of integers printed
+    The real number of integers printed
     """
     pop = 0
     for c in range(0, x):
