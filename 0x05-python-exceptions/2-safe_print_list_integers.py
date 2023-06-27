@@ -20,7 +20,7 @@ def safe_print_list_integers(my_list=[], x=0):
                 # Print the integer
                 print("{:d}".format(my_list[index]))
                 count += 1
-        except:
+        except (ValueError, TypeError):
             # Skip the element if it's not an integer
             pass
         index += 1
