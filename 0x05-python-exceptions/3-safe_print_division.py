@@ -9,14 +9,14 @@ def safe_print_division(a, b):
         b (int): The denominator.
 
     Returns:
-        float: The result of the division, or None if an error occurs.
+        float: The result of the division, or None
 
     Raises:
         ZeroDivisionError: If the denominator is zero.
         TypeError: If either input is not an integer.
 
     Prints:
-        The result of the division, or an error message if an error occurs.
+        The result of the division, or an error message
     """
     try:
         result = a / b
