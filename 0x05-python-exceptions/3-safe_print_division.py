@@ -18,15 +18,16 @@ def safe_print_division(a, b):
     Prints:
         The result of the division, or an error message
     """
-    try:
+     try:
+        # Divide the two numbers
         result = a / b
-    except ZeroDivisionError:
-        print("Cannot divide by zero")
-        return None
-    except TypeError:
-        print("Both inputs must be integers")
+    except ZeroDivisionError as e:
+        # Log the error
+        print(f"Error: {e}")
         return None
     else:
+        # Return the result of the division
         return result
     finally:
+        # Print the result of the division
         print("Inside result: {}".format(result))
