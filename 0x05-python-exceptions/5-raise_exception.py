@@ -9,6 +9,3 @@ def raise_exception():
     """
     # Raise a TypeError exception
     raise TypeError
-except TypeError as e:
-        # Log the error
-        print(f"Error: {e}")
