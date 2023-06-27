@@ -14,7 +14,7 @@ def safe_print_integer(value):
         # Try to convert the value to an integer and print it
         print("{:d}".format(int(value)))
 
-        # Return True if the value is an integer and has been correctly printed
+        # Return True if the value is an integer
         return isinstance(value, int)
     except (ValueError, TypeError):
         # Log the error and return False if the value is not an integer
