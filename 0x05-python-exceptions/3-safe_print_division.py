@@ -9,24 +9,15 @@ def safe_print_division(a, b):
         b (int): The denominator.
 
     Returns:
-        float: The result of the division, or None
-
-    Raises:
-        ZeroDivisionError: If the denominator is zero.
+    The result of the division, or None
 
     Prints:
-        The result of the division, or an error message
+    The result of the division, or an error message
     """
     try:
-        # Divide the two numbers
-        result = a / b
-    except ZeroDivisionError as e:
-        # Log the error
-        print(f"Error: {e}")
-        return None
-    else:
-        # Return the result of the division
-        return result
+        div = a / b
+    except (TypeError, ZeroDivisionError):
+        div = None
     finally:
-        # Print the result of the division
-        print("Inside result: {}".format(result))
+        print("Inside result: {}".format(div))
+    return (div)
