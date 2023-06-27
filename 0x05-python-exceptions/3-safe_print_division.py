@@ -13,7 +13,6 @@ def safe_print_division(a, b):
 
     Raises:
         ZeroDivisionError: If the denominator is zero.
-        TypeError: If either input is not an integer.
 
     Prints:
         The result of the division, or an error message
