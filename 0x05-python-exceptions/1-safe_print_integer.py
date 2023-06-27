@@ -1,0 +1,22 @@
+#!/usr/bin/python3
+
+def safe_print_integer(value):
+    """
+    This takes a value as argument and prints it as an integer
+
+    Parameters:
+    value (any): The value to be printed as an integer
+
+    Returns:
+    bool: True if the value is an integer and has been correctly printed, False otherwise
+    """
+    try:
+        # Try to convert the value to an integer and print it
+        print("{:d}".format(int(value)))
+
+        # Return True if the value is an integer and has been correctly printed
+        return isinstance(value, int)
+    except (ValueError, TypeError):
+        # Log the error and return False if the value is not an integer or cannot be printed
+        print("Error: The value is not an integer or cannot be printed as an integer")
+        return False
