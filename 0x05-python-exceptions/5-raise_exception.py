@@ -8,5 +8,4 @@ def raise_exception():
     TypeError: Always raised when the function is called.
     """
     try:
-        # Raise a TypeError exception
         raise TypeError
