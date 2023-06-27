@@ -18,7 +18,7 @@ def safe_print_division(a, b):
     Prints:
         The result of the division, or an error message
     """
-     try:
+    try:
         # Divide the two numbers
         result = a / b
     except ZeroDivisionError as e:
