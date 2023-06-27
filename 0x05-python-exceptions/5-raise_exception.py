@@ -7,7 +7,6 @@ def raise_exception():
     Raises:
     TypeError: Always raised when the function is called.
     """
-    # Raise a TypeError exception
     raise TypeError
     except TypeError as e:
         # Log the error
