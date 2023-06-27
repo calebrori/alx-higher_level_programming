@@ -18,5 +18,5 @@ def safe_print_integer(value):
         return isinstance(value, int)
     except (ValueError, TypeError):
         # Log the error and return False if the value is not an integer
-        print("Error: The value is not an integer or cannot be printed as an integer")
+        print("Error: The value is not an integer")
         return False
