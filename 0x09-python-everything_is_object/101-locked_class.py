@@ -4,7 +4,7 @@
 
 class LockedClass:
     """
-     This prevents the user from dynamically 
+     This prevents the user from dynamically
      creating new instance attributes.
     """
 
