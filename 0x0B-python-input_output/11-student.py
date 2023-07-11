@@ -9,7 +9,7 @@ class Student:
         """Initialize a new Student
 
         Args:
-            first_name (str): student first name 
+            first_name (str): student first name
             last_name (str): student last name
             age (int): student age
         """
