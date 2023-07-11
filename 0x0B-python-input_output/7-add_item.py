@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Script that adds all arguments to a Python list"""
+import json
 import sys
 
 if __name__ == "__main__":
