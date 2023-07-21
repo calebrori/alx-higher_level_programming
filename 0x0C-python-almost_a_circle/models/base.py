@@ -103,10 +103,10 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """Write the CSV serialization of a list of objects to a file.
+        """Write the CSV serialized of a list of objects to a file
 
         Args:
-            list_objs (list): A list of inherited Base instances.
+            list_objs (list): A list of inherited Base instances
         """
         filename = cls.__name__ + ".csv"
         with open(filename, "w", newline="") as csvfile:
@@ -123,13 +123,13 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        """Return a list of classes instantiated from a CSV file.
+        """Return a list of deserialized objects from a CSV file
 
-        Reads from `<cls.__name__>.csv`.
+        Reads from `<cls.__name__>.csv`
 
         Returns:
-            If the file does not exist - an empty list.
-            Otherwise - a list of instantiated classes.
+            If the file does not exist - an empty list
+            Otherwise - a list of instantiated classes
         """
         filename = cls.__name__ + ".csv"
         try:
@@ -147,11 +147,11 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """Draw Rectangles and Squares using the turtle module.
+        """Draw Rectangles and Squares using the turtle module
 
         Args:
-            list_rectangles (list): A list of Rectangle objects to draw.
-            list_squares (list): A list of Square objects to draw.
+            list_rectangles (list): Rectangle objects to draw
+            list_squares (list): Square objects to draw
         """
         turt = turtle.Turtle()
         turt.screen.bgcolor("#b7312c")
