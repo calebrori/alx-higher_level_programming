@@ -3,6 +3,7 @@ from base import Base
 import json
 import os
 
+
 class TestBase(unittest.TestCase):
 
     def test_create_with_custom_id(self):
@@ -46,6 +47,7 @@ class TestBase(unittest.TestCase):
         loaded_data = Base.load_from_file()
         self.assertEqual(loaded_data, [{'id': 1, 'name': 'Object1'}, {'id': 2, 'name': 'Object2'}])
         os.remove(filename)
+
 
 if __name__ == '__main__':
     unittest.main()
