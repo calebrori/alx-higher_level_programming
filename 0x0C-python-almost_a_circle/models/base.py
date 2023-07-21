@@ -76,7 +76,7 @@ class Base:
             **dictionary (dict): double pointer to a dictionary
         """
         if dictionary and dictionary != {}:
-            if cls.__name__ == "Square":
+            if cls.__name__ == "Rectangle":
                 new = cls(1, 1)
             else:
                 new = cls(1)
