@@ -3,8 +3,8 @@ from base import Base
 import json
 import os
 
-class TestBase(unittest.TestCase):
 
+class TestBase(unittest.TestCase):
     
     def test_create_with_custom_id(self):
         base_obj = Base(id=100)
