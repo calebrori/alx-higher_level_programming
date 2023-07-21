@@ -6,7 +6,7 @@ import os
 
 class TestBase(unittest.TestCase):
     
-    def test_create_with_custom_id(self):
+        def test_create_with_custom_id(self):
         base_obj = Base(id=100)
         self.assertEqual(base_obj.id, 100)
 
