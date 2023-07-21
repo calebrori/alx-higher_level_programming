@@ -73,7 +73,7 @@ class Base:
 
     def update(self, *args, **kwargs):
         if args:
-            attrs = ["width", "height", "size"]  # Add other attribute names as needed
+            attrs = ["width", "height", "size"]
             for attr, value in zip(attrs, args):
                 setattr(self, attr, value)
         if kwargs:
