@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-# test_rectangle.py
-"""Defines unittests for models/rectangle.py."""
+"""Defines unittests for models/rectangle.py"""
 
 import unittest
 from models.rectangle import Rectangle
