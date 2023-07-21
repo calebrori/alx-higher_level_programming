@@ -26,7 +26,7 @@ class TestBase(unittest.TestCase):
 
     def test_from_json_string(self):
         json_string = '[{"id": 1, "name": "Object1"},
-        {"id": 2, "name": "Object2"}]'
+            {"id": 2, "name": "Object2"}]'
         data = Base.from_json_string(json_string)
         self.assertEqual(data, [{'id': 1, 'name': 'Object1'}, {'id': 2, 'name': 'Object2'}])
 
