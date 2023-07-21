@@ -28,6 +28,18 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    def __init__(self, *args, **kwargs):
+        pass
+
+    def update(self, *args, **kwargs):
+        if args:
+            attrs = ["width", "height", "size"]
+            for attr, value in zip(attrs, args):
+                setattr(self, attr, value)
+        if kwargs:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """Return the JSON string representation of a list of dicts
