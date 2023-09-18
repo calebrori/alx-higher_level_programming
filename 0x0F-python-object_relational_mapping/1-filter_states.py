@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""  script that takes in an argument and displays all values in the database hbtn_0e_0_usa """
+"""  script that lists all states with N (upper N) from the database """
 import MySQLdb
 import sys
 
